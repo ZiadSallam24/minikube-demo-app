@@ -53,9 +53,6 @@ metadata:
   name: mongo-express-service
   namespace: myns
 spec:
-  # LoadBalancer exposes the service externally using a cloud provider's load balancer.
-  # For local testing like Minikube, you can use NodePort.
-  # you can write LoadBalancer in Minikube, but to actually access it you’ll need to run: minikube service <service-name>
   type: LoadBalancer
   selector:
     app: mongo-express
